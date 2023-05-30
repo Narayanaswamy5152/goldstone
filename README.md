@@ -1,22 +1,13 @@
-In this project, let's build an **Appointments App** by applying the concepts we have learned till now.
+In this project, I build a **Details App** by applying the concepts I have learned till now.
 
 ### Refer to the image below:
 
 <br/>
 <div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/appointments-app-output.gif" alt="appointments app output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+    <img src="https://res.cloudinary.com/dtylsgfeq/image/upload/v1685434970/Screenshot_2023-05-30_135148_vqzhgn.png" alt="details app output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
 </div>
 <br/>
 
-### Design Files
-
-<details>
-<summary>Click to view</summary>
-
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/appointments-app-sm-output-v2.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/appointments-app-lg-output.png)
-
-</details>
 
 ### Set Up Instructions
 
@@ -27,15 +18,15 @@ In this project, let's build an **Appointments App** by applying the concepts we
 - Start up the app using `npm start`
 </details>
 
-### Completion Instructions
+### Complete Instructions
 
 <details>
-<summary>Functionality to be added</summary>
+<summary>Functionalities added</summary>
 <br/>
 
 The app must have the following functionalities
 
-- Initially, the list of appointments should be empty and the title input and date input should be empty
+- Initially, the list of appointments should be empty and the title input ,email,gender and date input should be empty
 - When non-empty values are provided for title and date and the **Add** button is clicked,
   - A new appointment should be added to the list of appointments
   - The value inside the input elements for title and date should be updated to their initial values
@@ -62,10 +53,10 @@ The app must have the following functionalities
 
 Use these files to complete the implementation:
 
-- `src/components/Appointments/index.js`
-- `src/components/Appointments/index.css`
-- `src/components/AppointmentItem/index.js`
-- `src/components/AppointmentItem/index.css`
+- `src/components/Details/index.js`
+- `src/components/Details/index.css`
+- `src/components/DetailItem/index.js`
+- `src/components/DetailItem/index.css`
 </details>
 
 ### Quick Tips
@@ -142,5 +133,4 @@ Use these files to complete the implementation:
 >
 > - All components you implement should go in the `src/components` directory.
 > - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+
