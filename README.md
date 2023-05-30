@@ -91,21 +91,12 @@ Use these files to complete the implementation:
 **The following instructions are required for the tests to pass**
 
 - For the `format` function, pass the format string `dd MMMM yyyy, EEEE` as the second argument
-- The star button in each appointment should have the data-testid as **star**
-- The star image in each appointment should have alt as **star**
+- The star button in each detail should have the data-testid as **star**
+- The star image in each detail should have alt as **star**
 
 </details>
 
-### Resources
 
-<details>
-<summary>Image URLs</summary>
-
-- [https://assets.ccbp.in/frontend/react-js/appointments-app/appointments-img.png](https://assets.ccbp.in/frontend/react-js/appointments-app/appointments-img.png) alt should be **appointments**
-- [https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png](https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png)
-- [https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png](https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png)
-
-</details>
 
 <details>
 <summary>Colors</summary>
