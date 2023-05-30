@@ -1,4 +1,3 @@
-// Write your code here
 import {Component} from 'react'
 import {v4} from 'uuid'
 import {format} from 'date-fns'
@@ -20,6 +19,7 @@ class Details extends Component {
     dateInput: '',
     genderInput: '',
     isFilterActive: false,
+    status: 'active',
   }
 
   componentDidMount() {
@@ -38,6 +38,7 @@ class Details extends Component {
       id: team.id,
       email: team.email,
       gender: team.gender,
+      status: team.status,
     }))
 
     this.setState({
@@ -47,11 +48,11 @@ class Details extends Component {
 
   toggleIsStarred = id => {
     this.setState(prevState => ({
-      detailsList: prevState.detailsList.map(eachAppointment => {
-        if (id === eachAppointment.id) {
-          return {...eachAppointment, isStarred: !eachAppointment.isStarred}
+      detailsList: prevState.detailsList.map(eachDetail => {
+        if (id === eachDetail.id) {
+          return {...eachDetail, isStarred: !eachDetail.isStarred}
         }
-        return eachAppointment
+        return eachDetail
       }),
     }))
   }
@@ -82,7 +83,7 @@ class Details extends Component {
 
   onAddDetail = event => {
     event.preventDefault()
-    const {nameInput, dateInput, emailInput, genderInput} = this.state
+    const {nameInput, status, dateInput, emailInput, genderInput} = this.state
     const formattedDate = dateInput
       ? format(new Date(dateInput), 'dd MMMM yyyy, EEEE')
       : ''
@@ -93,6 +94,7 @@ class Details extends Component {
       email: emailInput,
       gender: genderInput,
       isStarred: false,
+      status,
     }
 
     this.setState(prevState => ({
@@ -130,6 +132,25 @@ class Details extends Component {
       <div className="app-container">
         <div className="responsive-container">
           <div className="details-container">
+            <div className="header-with-filter-container">
+              <h1 className="details-heading">Details</h1>
+              <button
+                type="button"
+                className={`filter-style ${filterClassName}`}
+                onClick={this.onFilter}
+              >
+                Starred
+              </button>
+            </div>
+            <ul className="details-list">
+              {filteredDetailsList.map(eachDetail => (
+                <DetailItem
+                  key={eachDetail.id}
+                  Details={eachDetail}
+                  toggleIsStarred={this.toggleIsStarred}
+                />
+              ))}
+            </ul>
             <div className="add-detail-container">
               <form className="form" onSubmit={this.onAddDetail}>
                 <h1 className="add-detail-heading">Add Details</h1>
@@ -187,25 +208,6 @@ class Details extends Component {
               />
             </div>
             <hr className="hr" />
-            <div className="header-with-filter-container">
-              <h1 className="details-heading">Details</h1>
-              <button
-                type="button"
-                className={`filter-style ${filterClassName}`}
-                onClick={this.onFilter}
-              >
-                Starred
-              </button>
-            </div>
-            <ul className="details-list">
-              {filteredDetailsList.map(eachDetail => (
-                <DetailItem
-                  key={eachDetail.id}
-                  Details={eachDetail}
-                  toggleIsStarred={this.toggleIsStarred}
-                />
-              ))}
-            </ul>
           </div>
         </div>
       </div>
