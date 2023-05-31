@@ -88,11 +88,10 @@ Use these files to complete the implementation:
 
 <br/>
 
-**The following instructions are required for the tests to pass**
 
-- For the `format` function, pass the format string `dd MMMM yyyy, EEEE` as the second argument
-- The star button in each detail should have the data-testid as **star**
-- The star image in each detail should have alt as **star**
+- For the `format` function, passed the format string `dd MMMM yyyy, EEEE` as the second argument
+- The star button in each detail have the data-testid as **star**
+- The star image in each detail have alt as **star**
 
 </details>
 
