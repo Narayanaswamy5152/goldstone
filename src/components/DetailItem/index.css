@@ -64,23 +64,7 @@
   }
 }
 
-.active-class {
-  background-color: green;
-  border-radius: 5px;
-  color: white;
-  padding: 5px;
-}
-.head-para {
-  display: flex;
-  justify-content: space-between;
-}
 
-.inActive-class {
-  background-color: orange;
-  padding: 5px;
-  border-radius: 5px;
-  color: white;
-}
 .date {
   color: #7e858e;
   font-family: 'Roboto';
