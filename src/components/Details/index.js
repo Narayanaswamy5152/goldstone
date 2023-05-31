@@ -19,7 +19,6 @@ class Details extends Component {
     dateInput: '',
     genderInput: '',
     isFilterActive: false,
-    status: 'active',
   }
 
   componentDidMount() {
@@ -94,7 +93,7 @@ class Details extends Component {
       email: emailInput,
       gender: genderInput,
       isStarred: false,
-      status,
+    
     }
 
     this.setState(prevState => ({
