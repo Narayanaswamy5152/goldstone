@@ -4,7 +4,7 @@ In this project, I build a **Details App** by applying the concepts I have learn
 
 <br/>
 <div style="text-align: center;">
-    <img src="https://res.cloudinary.com/dtylsgfeq/image/upload/v1685434970/Screenshot_2023-05-30_135148_vqzhgn.png" alt="details app output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+    <img src="https://res.cloudinary.com/dtylsgfeq/image/upload/v1685520339/Screenshot_2023-05-31_133418_o63bqm.png" alt="details app output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
 </div>
 <br/>
 
